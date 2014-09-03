@@ -1,18 +1,19 @@
-<Type> Academic
-<source> Corpus Linguistcs
-
-<name> Biber, D. 
-<date> 2012. 
 <title> Register as a predictor of linguistic variation. 
+<Author> Biber, D. 
 <pub info> Corpus Linguistics and Linguistic Theory 8:9-37.
+<source> Corpus Linguistcs
+<Type> Academic
+<Publication date> 2012. 
+
+
 
 Resumed by JD.
 Introduction
 Over the past 40 years, corpus research have led to the understanding of the connection between lexis and syntax. It has supported syntactical studies of lexis in grammatical constructions. It has been used to show association between lexis and constructions through deductive and pattern grammar approach. Large scale corpus analysis have also supported associations between sets of words themselves within a construction. 
 Though the researches based on corpus analysis suggestions are based on quantitative analysis, most of them do not report their quantitative findings, or the specificity of the quantitative analysis is unclear. Similar to other disciplines, Corpora presents a sample representation of a population being studied. Quantitative result of the study of the corpora not only provides accountable data for the reader to understand the conclusion, but it also provide essential information about the distribution of the association being studied. 
 In addition to lacking quantitative findings, these studies also lack register differences. As in, all these studies look at English as one global language as used by everyone, rather than multiple different variations, containing different constructions based on the registers. By comparing two general corpus approaches to the study of language, this paper seeks to understand consequences of research designs, measurement and statistical analysis of research questions. In addition, it argues for the importance of register at all linguistic levels in a research. 
-Perspectives on ‘frequency’: Linguistics versus texts-linguistics variation  
-Generally, two corpus based studies have one of two goals. To describe variants and their use, and/or to compare text varieties. To support these goals, three major types of research designs are employed: Type A – C.
+Perspectives on ï¿½frequencyï¿½: Linguistics versus texts-linguistics variation  
+Generally, two corpus based studies have one of two goals. To describe variants and their use, and/or to compare text varieties. To support these goals, three major types of research designs are employed: Type A ï¿½ C.
 A is designed for the first goal, in which each occurrence is analyzed. Though it must be analyzed using non-parametric, it does not provide basis for determine rate of occurrences, nor the variant distributions between registers. However, it can show the preferred variant of a register. 
  B is designed for the second goal, and analyzes each individual text. By providing the density of the text, along with the variants being studied, this type of research provides bases for distributional analysis of the variants. 
 and C, includes both type A and B analysis, and supports both goals. 
@@ -23,8 +24,8 @@ Grammatical variation and register.
 Over the past few years, many software programs have been created to provide statistical studies of the data. These statistical analysis have helped pinpointed some of the factors influencing different types of speech. Though different programs have shown to be useful in showing the strength of certain factors versus other different factors, registers can help describe simple statistics of the data. 
 Multi-dimensional studies have shown that, while comparing spoken for versus academic writing of the language, different types of constructions are used. The spoken language prefers clausal, while the written language prefers phrasal. 
 Lexis, grammar, and register
-While studying phraseology of different words, many studies have disregard the use of registers. Though their omission of the register analysis may be explained by the large size of the corpus being used, most lexico-grammatical studies do not provide a reasoning for not using it. However, the collostructional association of the verb ‘to be’ with certain verbs appearing in passive mode more often in spoken versus the written language, and other verbs associated with passive forms in reading do not correlates to passive form in the spoken language shows a great need to use the register analysis. 
+While studying phraseology of different words, many studies have disregard the use of registers. Though their omission of the register analysis may be explained by the large size of the corpus being used, most lexico-grammatical studies do not provide a reasoning for not using it. However, the collostructional association of the verb ï¿½to beï¿½ with certain verbs appearing in passive mode more often in spoken versus the written language, and other verbs associated with passive forms in reading do not correlates to passive form in the spoken language shows a great need to use the register analysis. 
 Conclusion. 
-Attempting to fully summarize this article would create an article in and out of itself. However, some great points may be taken from this article, or book.  It has shown a great need to use the computational analysis at the disposal of the linguists. By going very far to gather the data, it would be rather clearer to the readers to see the results of the data, rather than merely having to ‘believe’ in the word of the linguists. In addition, register analysis of the data would help in understanding the distribution of the data. May it be from in syntactical analysis of different texts, or a lexical collocational variation, registers may help differentiate the use of these lexis at the different registers, instead of one fits all.
+Attempting to fully summarize this article would create an article in and out of itself. However, some great points may be taken from this article, or book.  It has shown a great need to use the computational analysis at the disposal of the linguists. By going very far to gather the data, it would be rather clearer to the readers to see the results of the data, rather than merely having to ï¿½believeï¿½ in the word of the linguists. In addition, register analysis of the data would help in understanding the distribution of the data. May it be from in syntactical analysis of different texts, or a lexical collocational variation, registers may help differentiate the use of these lexis at the different registers, instead of one fits all.
 Discussion
  I do like the article, it provides multiple aspects of studies that may improve the understanding of the readers, as well as keeping the researchers accountable of the data. However, this text is too long to maintain my [focus]. Though I have no complains on its structures. Beyond that, This may help to better understand, especially from a lexical graphical point of view, the use of the near synonyms, as well as different lexemes that may contain different meaning from one register to another. This would help separate, from a teacher point of view, what to teach as part of the written language, and may hardly be attested in the spoken, and vice versa. 
