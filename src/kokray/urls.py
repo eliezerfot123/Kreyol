@@ -22,7 +22,8 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
-    #url(r'^search/', include('haystack.urls')),
+    url(r'^search/', include('haystack.urls')),
+    url(r'^select2/', include('django_select2.urls')),
    
 #===== move search view to corpus ========#   
     

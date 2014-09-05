@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 """
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS as TCP
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
@@ -26,10 +27,22 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
+#config django suit
+AUTO_RENDER_SELECT2_STATICS = True
+
+SUIT_CONFIG = {
+                'ADMIN_NAME': 'KOKRAY',
+                'SHOW_REQUIRED_ASTERISK': True,
+                'CONFIRM_UNSAVED_CHANGES': True,
+                'SEARCH_URL': '/admin/user',
+                'MENU_OPEN_FIRST_CHILD': True,
+                }
 
 # Application definition
 
 INSTALLED_APPS = (
+    'suit',
+    'django_select2',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -75,6 +88,10 @@ HAYSTACK_CONNECTIONS = {
     },
 }
 
+#for suit and other context procesors
+TEMPLATE_CONTEXT_PROCESSORS = TCP + (
+                                    'django.core.context_processors.request',
+                                    )
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
