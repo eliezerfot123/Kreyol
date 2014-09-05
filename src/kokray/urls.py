@@ -13,7 +13,7 @@ admin.autodiscover()
 sqs = SearchQuerySet().filter()
 
 urlpatterns = patterns('',
-
+    url('^select2/', include('django_select2.urls')),
     url(r'^$', 'documents.views.home', name='home'),
     url(r'^about/$', 'documents.views.about', name='about'),
     url(r'^corpus$', 'documents.views.corpus', name='corpus'),
