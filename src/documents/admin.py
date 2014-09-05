@@ -9,9 +9,24 @@ from .models import Contact
 from .models import Note
 
 
+#updated = models.DateTimeField(auto_now_add=False, auto_now=True)
 class DocumentAdmin(admin.ModelAdmin):
-    class Meta:
-        model = Document
+    fieldsets = [
+        (None, {
+            'classes': ('suit-tab suit-tab-general',),
+            'fields': ['title', 'author', 'pub_info']
+        }),
+
+        ('type & source & date', {
+            'classes': ('suit-tab suit-tab-type',),
+            'fields': ['type_name', 'source_name', 'date',]}),
+
+        ('Content', {
+            'classes': ('suit-tab suit-tab-content',),
+            'fields': ['text',]}),
+    ]
+    
+    suit_form_tabs = (('general', 'General'), ('type', u'Type and Date'),('content', u'Content Docs')) 
 
 admin.site.register(Document, DocumentAdmin)
 
