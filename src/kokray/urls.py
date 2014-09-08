@@ -18,7 +18,6 @@ urlpatterns = patterns('',
     url('^select2/', include('django_select2.urls')),
     url(r'^$', 'documents.views.home', name='home'),
     url(r'^about/$', 'documents.views.about', name='about'),
-    url(r'^corpus$', 'documents.views.corpus', name='corpus'),
     url(r'^contact/$', 'documents.views.contact', name='contact'),
     url(r'^thank-you/$', 'documents.views.thankyou', name='thankyou'),
     # url(r'^blog/', include('blog.urls')),
@@ -34,7 +33,7 @@ urlpatterns = patterns('',
         template='search/search.html',
         searchqueryset=sqs,
         form_class=ModelSearchForm
-    ), name='haystack_search'),
+    ), name='corpus'),
 )
 
 
