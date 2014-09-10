@@ -88,6 +88,10 @@ HAYSTACK_CONNECTIONS = {
     },
 }
 
+HAYSTACK_CUSTOM_HIGHLIGHTER = 'documents.utils.MultilineHighlighter'
+
+HAYSTACK_HIGHLIGHTED_SYMBOLS = 20
+
 #for suit and other context procesors
 TEMPLATE_CONTEXT_PROCESSORS = TCP + (
                                     'django.core.context_processors.request',
