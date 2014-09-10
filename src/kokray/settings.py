@@ -87,6 +87,11 @@ HAYSTACK_CONNECTIONS = {
         'INDEX_NAME': 'haystack',
     },
 }
+import os
+HAYSTACK_CONNECTIONS = {
+        'default': {
+            'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
+            'PATH': os.path.join(BASE_DIR, 'whoosh_index')}}
 
 HAYSTACK_CUSTOM_HIGHLIGHTER = 'documents.utils.MultilineHighlighter'
 
