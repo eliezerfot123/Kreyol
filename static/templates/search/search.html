@@ -69,6 +69,7 @@
                             
 					    <table border="1">
                             <tr>
+                              <th></th>
                               <th>Year</th>
                               <th>Type</th>
                               <th>Source</th>
@@ -78,6 +79,7 @@
                             
                           {% for result in page.object_list %}
                             <tr>
+                              <td>{{ forloop.counter }}</td>
                               <td>{{ result.result.object.date.year }}</td>
                               <td>{{ result.result.object.type_name }}</td>
                               <td>{{ result.result.object.source_name }}</td>
