@@ -9,6 +9,8 @@ from haystack.forms import ModelSearchForm
 from haystack.query import SearchQuerySet
 from haystack.views import SearchView, search_view_factory
 
+from documents.views import MultilineSearchView
+
 admin.autodiscover()
 sqs = SearchQuerySet().filter()
 
@@ -22,7 +24,7 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^search/', include('haystack.urls')),
+    url(r'^search/', MultilineSearchView(), name='haystack_search'),
     url(r'^select2/', include('django_select2.urls')),
    
 #===== move search view to corpus ========#   

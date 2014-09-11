@@ -88,6 +88,8 @@ HAYSTACK_CONNECTIONS = {
     },
 }
 
+HAYSTACK_WORDS_AROUND = 3
+
 #for suit and other context procesors
 TEMPLATE_CONTEXT_PROCESSORS = TCP + (
                                     'django.core.context_processors.request',
