@@ -76,16 +76,20 @@
                               <th>Contents</th>
                             </tr>
                             
-                          {% for result in page.object_list %}    
-                            
+                          {% for result in page.object_list %}
                             <tr>
-                              <td>{{ result.object.date.year }}</td>
-                              <td>{{ result.object.type_name }}</td>
-                              <td>{{ result.object.source_name }}</td>
+                              <td>{{ result.result.object.date.year }}</td>
+                              <td>{{ result.result.object.type_name }}</td>
+                              <td>{{ result.result.object.source_name }}</td>
                              
-                              <td>{% highlight result.text with query max_length 80 %}</td>
+                              <td>
+                                  {{ result.parts.0 }}
+                                  <span class="highlighted">
+                                      {{ result.parts.1 }}
+                                  </span>
+                                  {{ result.parts.2 }}
+                              </td>
                             </tr>
-                            
 
                         {% empty %}
                             <p>No results found.</p>
