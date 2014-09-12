@@ -111,10 +111,14 @@ class MultilineSearchView(SearchView):
                         u' '.join(text[cur:].split()[1:WORDS_AROUND+1]),
                         )
 
+    def extra_context(self):
+        return {'num_hits': self.num_hits}
+
     def get_results(self):
         results = super(MultilineSearchView, self).get_results()
         show_results = []
         for r in results:
             for parts in self.get_parts(r.text):
                 show_results.append({'result': r, 'parts': parts})
+        self.num_hits = len(show_results)
         return show_results
