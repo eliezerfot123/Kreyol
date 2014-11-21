@@ -1,3 +1,4 @@
+import datetime
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils.encoding import smart_unicode
@@ -28,7 +29,7 @@ class Document(models.Model):
     pub_info = models.CharField(max_length=120, null=True, blank=True, verbose_name="Published info")
     source_name = models.ForeignKey(Source, verbose_name="Source")
     type_name = models.ForeignKey(Type, verbose_name="Type")
-    date = models.DateField(verbose_name="Published Date")
+    date = models.DateField( verbose_name="Published Date")
     text = models.TextField()
     timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)
     updated = models.DateTimeField(auto_now_add=False, auto_now=True)

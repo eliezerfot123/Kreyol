@@ -1,0 +1,80 @@
+
+ 
+      <div class="bootstrap-table">
+	  
+	  <div class="fixed-table-header" style="height: 37px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(221, 221, 221); margin-right: 0px;">
+	    <table class="table table-hover" style="width: 796px;">
+	    
+	    </table>
+	  </div>
+	  ---
+	  <div class="fixed-table-body">
+	  <div class="fixed-table-loading" style="top: 37px; display: none;">Loading, please wait…</div>
+	
+            <table data-toggle="table" data-url="data1.json" data-cache="false" data-height="299" class="table table-hover" style="margin-top: -41px;">
+	     
+	    
+	      <thead>
+		<tr>
+		  <th style="">
+		    <div class="th-inner " style="width: 100px;">Item ID</div>
+		   
+		  </th>
+		  <th style="">
+		    <div class="th-inner " style="width: 100px;">Item Name</div>
+		   
+		  </th>
+		  <th style="">
+		    <div class="th-inner " style="width: 100px;">Item Price</div>
+		   
+		  </th>
+		</tr>
+	      </thead>
+		
+	      <tbody>
+                 {% for result in page.object_list %}
+		    <tr data-index="0">
+		  <td >0</td>
+		  <td style="">Item 0</td>
+		  <td style="">0</td>
+		</tr>
+		<tr data-index="1">
+		  <td style="">1</td>
+		  <td style="">Item 1</td>
+		  <td style="">1</td>
+		</tr>
+		<tr data-index="2">
+		  <td style="">2</td>
+		  <td style="">Item 2</td>
+		  <td style="">2</td>
+		</tr>
+                <tr>
+		      <td style="">{{ forloop.counter }}</td>
+		      <td style="">{{ result.result.object.date.year }}</td>
+		      <td style="">{{ result.result.object.type_name }}</td>
+		      <td style="">{{ result.result.object.source_name }}</td>
+		      <td style="">
+			  {{ result.parts.0 }}
+			  <span class="highlighted">
+			      {{ result.parts.1 }}
+			  </span>
+			  {{ result.parts.2 }}
+		      </td>
+		    </tr>
+
+		  {% empty %}
+		      <p>No results found.</p>
+		  {% endfor %}
+		  
+                  
+		
+		
+                
+		
+	      </tbody>
+	    </table>
+	  </div>
+	  <div class="fixed-table-pagination"></div>
+	
+      </div>
+      <div class="clearfix"></div>

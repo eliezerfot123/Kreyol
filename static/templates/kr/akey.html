@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+
+<!-- PAGE TITLE
+================================================== -->
+    {% block title %}
+	Kokray Akèy
+    {% endblock %}
+
+
+<!-- NAVBAR
+================================================== -->
+
+    {% block nav %}
+
+        {% include 'nav3.html' %}
+
+    {% endblock %}
+
+<!-- Carousel
+================================================== -->
+    {% block carousel %}
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+
+    <div class="item active">
+      <img src="/static/images/book.jpg" alt="First slide" img class="img-responsive">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Enstiti Kreyòl Entènasyonal</h1>
+          <p>
+            Enstiti Kreyòl Entènasyonal la gen pou bi pou li sipòte devlopman peyi a travè devlopman syantifik nan lang nan.
+            Nou vle fè pwomosyon lang kreyòl la an Ayiti, epi nan tout mond lan.
+            N’ap fè sa a travè kreyasyon kòpis lang nan, diksyonè nan lang nan epi
+	    N’ap itlize lang nan pwodiksyon nan sijè akademik e syantifik.
+	  </p>
+          <p><a class="btn btn-lg btn-primary" href="{% url "kontak" %}" role="button">Kontakte nou pou plis enfòmasyon</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="/static/images/mg.jpg" alt="Second slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Pwojè yo</h1>
+          <p>
+              Pou ou kapab aprann plis epi jwenn enfòmasyon sou diferan aspè pwojè Enstiti kreyòl entènasyonal la ap sipote,
+              ak kòman li ap ede avansman lang kreyòl la an Ayiti ak nan tout mond lan.
+          </p>
+          <p><a class="btn btn-lg btn-primary" href="{% url "pwoje" %}" role="button">Aprann plis</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="/static/images/LawBooks.jpg" alt="Third slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Kontakte nou</h1>
+          <p>
+             Nou gen anpil devlopman n’ap fè sou sit la ak nan pwogram nan.
+             Si ou gen yon ide, yon kesyon, oswa yon pwoblèm ou ta renmen fè nou konnen,
+             oswa ou ta renmen fè pati gwoup la, voye yon mesaj pou nou.<br/>
+             Anpil men, chay pa lou !</p>
+          <p><a class="btn btn-lg btn-primary" href="{% url "kontak" %}" role="button">Kontakte nou</a></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div><!-- /.carousel -->
+
+    {% endblock %}
+
+
+<!-- Marketing messaging and featurettes
+================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+    {% block marketing %}
+
+        <div class="container marketing">
+<!--
+  <!-- Three columns of text below the carousel -->
+	    <div class="row">
+	      <div class="col-lg-4">
+		<h2>Plan nou</h2>
+		<p>
+		  Plan nou pou kounye a se pou nou sipòte devlopman pwojè yo.
+		  Tankou rechèch, regwoupman manm, devlope lòt plan, epi pataje mesaj yo.
+		  Gen anpil travay pou nou fè, men avèk tèt ansanm mwen kwè n’ap rive.<br/>
+		  Devlope lang nou, devlope peyi nou!	  
+		</p>
+		
+	      </div><!-- /.col-lg-4 -->
+	      
+	      <div class="col-lg-4">
+		<h2>Kijan ou ka ede !</h2>
+		<p>
+		  Ou kapap sipòte nan plizyè fason. 
+		  Ou kapab fè lekòl ou konnen plis sou pwojè a, ou kapab vin yon manm nan pwojè a, ou kapab vin yon delege pou pwojè a. 
+		  Ou kapab tou, ede nan tradiksyon, ak koreksyon tèks yo, oswa nan yon matyè espesifik.
+		</p>
+		
+	      </div><!-- /.col-lg-4 -->
+	      
+	      <div class="col-lg-4">
+		<h2>Pou rechèch yo</h2>
+		<p>
+		  Nou ap chèche moun de pwogram prensipal yo kounye a. 
+		  Nou bezwen moun sa yo pou ede nan devlopman Kòpis la, ak nan devlopman Diksyonè Ekolojik ak Syans anviwònmantal la. 
+		  Anplis, nou bezwen ekspè nan syans agrikòl ak syans lengwistik pou ede premye pwogram sa a ak/oswa fè rechèch nan matyè sa yo. 
+		</p>
+		
+	      </div><!-- /.col-lg-4 -->
+	    </div><!-- /.row -->
+    
+      <!-- START THE FEATURETTES -->
+    
+      <hr class="divider">
+    
+      <!-- /END THE FEATURETTES -->
+    
+    </div><!-- /.container -->
+
+  {% endblock %}
+  {% block lang %}
+      <a href="{% url "home" %}"> In English </a>
+  {% endblock %}

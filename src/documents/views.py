@@ -8,18 +8,63 @@ from .forms import ContactForm
 
 from itertools import chain
 
-# Create your views here.
+#===== Kreyol Pages ========#
 
-def home(request):
+def akey(request):
 
-     return render_to_response("kokray.html",
+     return render_to_response("kr/akey.html",
                               locals(),
                               context_instance=RequestContext(request))
 
 
-def about(request):
+def ekip(request): #=====Paj Ekip la =======#
 
-     return render_to_response("about.html",
+    return render_to_response("kr/ekip.html",
+                              locals(),
+                              context_instance=RequestContext(request))
+
+
+def pwoje(request):
+
+     return render_to_response("kr/pwoje.html",
+                              locals(),
+                              context_instance=RequestContext(request))
+
+
+def kontak(request):
+
+    form = ContactForm(request.POST or None)
+
+    if form.is_valid():
+        save_it = form.save(commit=False)
+        save_it.save()
+        messages.success(request, 'Thank you for Joining')
+        return HttpResponsePermanentRedirect('../')
+
+    return render_to_response("kr/kontak.html",
+                              locals(),
+                              context_instance=RequestContext(request))
+
+
+#===== English Pages ========#
+
+def home(request):
+
+     return render_to_response("en/kokray.html",
+                              locals(),
+                              context_instance=RequestContext(request))
+
+
+def team(request): #=====Paj Ekip la =======#
+
+    return render_to_response("en/team.html",
+                              locals(),
+                              context_instance=RequestContext(request))
+
+
+def project(request):
+
+     return render_to_response("en/project.html",
                               locals(),
                               context_instance=RequestContext(request))
 
@@ -35,25 +80,20 @@ def contact(request):
         return HttpResponsePermanentRedirect('/thank-you/')
 
 
-    return render_to_response("contact.html",
+    return render_to_response("en/contact.html",
                               locals(),
                               context_instance=RequestContext(request))
 
-def corpus(request):
-
-    #========== Search Extention goes here ===========#
-
-    return render_to_response("corpus.html",
-                              locals(),
-                              context_instance=RequestContext(request))
 
 
 def thankyou(request):
 
-    return render_to_response("thankyou.html",
+    return render_to_response("en/thankyou.html",
                               locals(),
                               context_instance=RequestContext(request))
 
+
+#===== Search ========#
 
 class MultilineSearchView(SearchView):
     def find_highlightable_words(self, text):
@@ -122,3 +162,4 @@ class MultilineSearchView(SearchView):
                 show_results.append({'result': r, 'parts': parts})
         self.num_hits = len(show_results)
         return show_results
+    

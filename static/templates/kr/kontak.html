@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+<!-- PAGE TITLE
+================================================== -->
+    {% block title %}
+	Kontakte Nou
+    {% endblock %}
+
+<!-- NAVBAR
+================================================== -->
+
+    {% block nav %}
+
+        {% include 'nav3.html' %}
+
+    {% endblock %}
+
+
+<!-- Carousel
+================================================== -->
+    { % block carousel %}
+
+        {% include 'carousel.html' %}
+
+    { % endblock %}
+
+
+<!-- Marketing messaging and featurettes
+================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+    {% block marketing %}
+
+    <div class="container marketing">
+   
+
+   <!-- START THE FEATURETTES -->
+
+          <div class="row featurette">
+            <div class="col-md-6">
+              <h2>Tanpri, ranpli fòm sa ak enfòmasyon ou, <br/> yon moun ap reponn ou sanzatann !</h2>
+
+                <form method="POST" action=""> {% csrf_token %}
+                         {{form.as_p}}
+                        <input type="submit"  class="btn btn-success">
+                </form>
+            </div>
+
+            <div class="col-md-6">
+            	<br/>
+            	<br/>
+            	<br/>
+            	
+            	<br/>
+            	<br/>
+              <img class="featurette-image img-responsive" img src="/static/images/3.jpg" alt="Generic placeholder image" style="padding-right: 15px" >
+            </div>
+	    
+          </div>
+	  
+	  
+
+          <hr class="divider">
+
+          <!-- /END THE FEATURETTES -->
+
+        </div><!-- /.container -->
+
+
+  {% endblock %}
+
+  {% block test %}
+    
+  
+  {% endblock %}
+
+  {% block lang %}
+      <a href="{% url "contact" %}"> In English </a>
+  {% endblock %}
+
+

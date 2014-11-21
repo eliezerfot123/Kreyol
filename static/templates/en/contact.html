@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+<!-- PAGE TITLE
+================================================== -->
+    {% block title %}
+      
+	Contact Us
+	
+    {% endblock %}
+
+<!-- NAVBAR
+================================================== -->
+    {% block nav %}
+
+      {% include 'nav2.html' %}
+
+    {% endblock %}
+
+<!-- Carousel
+================================================== -->
+    { % block carousel %}
+
+        {% include 'carousel.html' %}
+
+    { % endblock %}
+
+<!-- Marketing messaging and featurettes
+================================================== -->
+    {% block marketing %}
+
+      <div class="container marketing"> 
+	<div class="row featurette">
+	  <div class="col-md-6">
+	    <h2>Please fill this form out, <br/> We will return your message shortly !</h2>
+  
+	      <form method="POST" action=""> {% csrf_token %}
+		       {{form.as_p}}
+		      <input type="submit"  class="btn btn-success">
+	      </form>
+	  </div>
+	  <div class="col-md-6">
+            	<br/>
+            	<br/>
+            	<br/>
+            	
+            	<br/>
+            	<br/>
+              <img class="featurette-image img-responsive" img src="/static/images/3.jpg" alt="Generic placeholder image" style="padding-right: 15px" >
+            </div>
+	</div>
+      <hr class="divider">
+      </div><!-- /.container -->
+
+    {% endblock %}
+  
+<!-- TESTING BLOCK
+================================================== -->
+    {% block test %}
+    
+    {% endblock %}
+    
+  <hr class="divider">
+  {% block lang %}
+      <a href="{% url "kontak" %}"> An Kreyol </a>
+  {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

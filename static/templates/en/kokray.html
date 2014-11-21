@@ -1,0 +1,151 @@
+{% extends 'base.html' %}
+
+<!-- PAGE TITLE
+================================================== -->
+    {% block title %}
+	Home
+    {% endblock %}
+
+<!-- NAVBAR
+================================================== -->
+
+    {% block nav %}
+
+        {% include 'nav2.html' %}
+
+    {% endblock %}
+
+<!-- Carousel
+================================================== -->
+    {% block carousel %}
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+
+    <div class="item active">
+      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAFVVVQAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide" img class="img-responsive">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Enstiti Kreyòl Entènasyonal</h1>
+          <p>
+            Enstiti Kreyòl Entènasyonal la se yon pwojè ki genyen pwomosyon lang kreyòl la pou bi.
+            Li vle fè pwomosyon lang kreyòl la an Ayiti, epi nan tout mond lan.
+            Li ap fè sa a travè kreyasyon kòpis lang nan, diksyonè nan lang nan epi  li ap itlize lang nan pwodiksyon nan sijè akademik e syantifik.
+		  </p>
+          <p><a class="btn btn-lg btn-primary" href="{% url "kontak" %}" role="button">Kontakte nou pou plis enfòmasyon</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAFVVVQAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Pwojè yo</h1>
+          <p>
+              Pou ou kapab aprann plis epi jwenn enfòmasyon sou diferan aspè pwojè Enstiti Kreyòl Entènasyonal la ap sipòte,
+              ak kòman li ap ede avansman lang kreyòl la an Ayiti ak nan tout mond lan.
+          </p>
+          <p><a class="btn btn-lg btn-primary" href="{% url "pwoje" %}" role="button">Aprann plis</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAFVVVQAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Kontakte nou</h1>
+          <p>
+             Nou gen anpil devlopman n’ap fè sou sit la ak nan pwogram nan.
+             Si ou gen yon ide, yon kesyon, oswa yon pwoblèm ou ta renmen fè nou konnen,
+             oswa ou ta renmen fè pati gwoup la, voye yon mesaj pou nou.<br/>
+             Anpil men, chay pa lou !</p>
+          <p><a class="btn btn-lg btn-primary" href="{% url "kontak" %}" role="button">Kontakte nou</a></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div><!-- /.carousel -->
+
+    {% endblock %}
+
+
+<!-- Marketing messaging and featurettes
+================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+  {% block marketing %}
+
+  <div class="container marketing">
+
+  <!-- Three columns of text below the carousel -->
+  <div class="row">
+    <div class="col-lg-4">
+      <h2>The Plan</h2>
+      <p>
+      	The plan of the Institute at the moment is to support the advancement of the project,
+	which includes, research, team building, developmental planning, as well as the diffusion of these information.
+	There is much work to be done, however, together, we can make it happen. <br/>
+	Further the development of our language is furthering our country!
+      </p>
+      <!--
+      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+	  -->
+    </div><!-- /.col-lg-4 -->
+    
+    <div class="col-lg-4">
+      <h2>How can you Help!</h2>
+      <p>
+      	You can support this project of furthering the usage of the language in multiple ways.
+	You can help diffuse this information to schools, you can become a delegate for the project,
+	and you can become a member of the Institute, working directly on the project.
+	By working on the project, you can provide support in compiling, and/or translating documents,
+	or provide support on a specific field of study. Last but not least, you can sponsor this project,
+	which in return will help the Haitian community as a whole. 
+      </p>
+      <!--
+      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+	  -->
+    </div><!-- /.col-lg-4 -->
+    
+    <div class="col-lg-4">
+      <h2>The Research</h2>
+      <p>
+	We are currently looking for students of all fields of study to use the language in research,
+	as well as publications. We are particularly focusing on the usage of the language in the scientific fields;
+	however, we welcome all fields. We are also looking for researchers who can help in the development of the corpus,
+	as well as the monolingual Ecological and Environmental Science dictionary in Haitian Creole. 
+	Furthermore, we are looking for experts in the agricultural and linguistic sciences to help further the project, or to do research in those fields. 
+      </p>
+      <!--
+      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+	  -->
+    </div><!-- /.col-lg-4 -->
+  </div><!-- /.row -->
+
+
+  <!-- START THE FEATURETTES -->
+
+
+
+  <hr class="divider">
+
+  <!-- /END THE FEATURETTES -->
+
+</div><!-- /.container -->
+
+  {% endblock %}
+  
+    {% block lang %}
+	<a href="{% url "akey" %}"> An Kreyol </a>
+    {% endblock %}
