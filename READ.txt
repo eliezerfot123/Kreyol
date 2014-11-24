@@ -1,2 +1,0 @@
-Upload the documents from docs via admin
-Needs Elasticsearch running on the development machine to work
