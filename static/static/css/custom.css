@@ -1,0 +1,42 @@
+.col-md-6 h2 {
+  font-size: 2.1em;
+    color:#121212;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/* this is for your ugly forms */
+
+label[for=id_title] {
+  font-size: .9em;
+  font-family: "arial", times New Roman, sans-serif;  
+   padding-right: 38px;
+}
+
+label[for=id_first_name] {
+  font-size: .9em;
+  font-family: "arial", times New Roman, sans-serif;  
+}
+
+label[for=id_last_name] {
+  font-size: .9em;
+  font-family: "arial", times New Roman, sans-serif;  
+}
+
+label[for=id_email] {
+  font-size: .9em;
+  font-family: "arial", times New Roman, sans-serif;  
+    padding-right: 30px;
+}
+
+label[for=id_message] {
+  font-size: .9em;
+  font-family: "arial", times New Roman, sans-serif;  
+  padding-right: 12px;
+    
+    
+}
+label[for=id_q] {
+  font-size: .9em;
+  font-family: "arial", times New Roman, sans-serif;  
+}

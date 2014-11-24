@@ -1,0 +1,27 @@
+/* this is for your ugly forms */
+
+label[for=id_title] {
+  font-size: .7em;
+  font-family: "arial", times New Roman, sans-serif;  
+}
+
+label[for=id_first_name] {
+  font-size: .7em;
+  font-family: "arial", times New Roman, sans-serif;  
+}
+
+label[for=id_last_name] {
+  font-size: .7em;
+  font-family: "arial", times New Roman, sans-serif;  
+}
+
+label[for=id_email] {
+  font-size: .7em;
+  font-family: "arial", times New Roman, sans-serif;  
+}
+
+label[for=id_message] {
+  font-size: .7em;
+  font-family: "arial", times New Roman, sans-serif;  
+   color: red;
+}

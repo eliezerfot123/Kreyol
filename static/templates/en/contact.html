@@ -34,8 +34,10 @@
 	    <h2>Please fill this form out, <br/> We will return your message shortly !</h2>
   
 	      <form method="POST" action=""> {% csrf_token %}
-		       {{form.as_p}}
-		      <input type="submit"  class="btn btn-success">
+              <div class="form-group">
+                   {{form.as_p}}
+              </div>
+		  <button type="submit" class="btn btn-success">Submit</button>    <!--<input type="submit"  class="btn btn-success">-->
 	      </form>
 	  </div>
 	  <div class="col-md-6">
