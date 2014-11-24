@@ -39,7 +39,6 @@ Icon
 *.swp
 Lib/*
 Scripts/*
-Corpus/*
 bin/*
 Include/*
 .Python
