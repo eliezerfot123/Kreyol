@@ -40,4 +40,5 @@ Icon
 Lib/*
 Scripts/*
 Corpus/*
-Bin/*
+bin/*
+Include/*
