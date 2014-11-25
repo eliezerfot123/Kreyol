@@ -7,4 +7,4 @@ new search
 Dependancies
 ======
 
-In addition to the requirements, Elasticsearch is needed to run the search queries. 
+In addition to the requirements, Needs Elasticsearch running on the development machine to run the search queries. 
